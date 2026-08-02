@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<script>
+/* === OFFLINE BAKE-IN (added when this page was archived) ===
+   Originally this page fetched its record live from a Google Apps Script
+   endpoint keyed by ?id=. That lookup is what expires. The response is
+   frozen below and handed to the page's own code, so nothing is fetched. */
+window.__A2P_DATA__ = {
+  "ok": true,
+  "used": "id",
+  "query": "uid-1785297021736-935310",
+  "rowNumber": 3360,
+  "id": "uid-1785297021736-935310",
+  "Legal Business name": "Pro Flux Labs LLC",
+  "a2pwebsite": "",
+  "img1": "",
+  "img2": "",
+  "timestamp": "2026-07-29T03:56:12.000Z",
+  "IP": "",
+  "agent_name": "Jason White",
+  "Thumbnail 2": "jason@landmorecalls.com",
+  "Business Email": "jason@landmorecalls.com",
+  "LOGO URL": "https://services.leadconnectorhq.com/documents/download/fNjg9lIjL1Uw4tMDh8fc",
+  "Support Phone": "9259990285",
+  "Support Email": "",
+  "Business Address": "12 highland cove lane, henderson, nevada",
+  "Slug": "ProFluxLabsLLC",
+  "Service 1 Name": "Contractor Marketing Strategy",
+  "Service 1 Description": "Develop a marketing plan for home service contractors that aligns service offerings, target neighborhoods, and messaging to improve conversion from first visit to inquiry.",
+  "Service 2 Name": "Conversion-Focused Landing Pages",
+  "Service 2 Description": "Design and optimize landing pages for residential services with clear service details, trust elements, and conversion-ready layouts to increase the likelihood of form submissions.",
+  "Service 3 Name": "Campaign Setup and Optimization",
+  "Service 3 Description": "Manage and refine digital campaigns across search and related channels, using performance data to improve targeting, ad messaging, and overall conversion efficiency for contractor services.",
+  "Hero Image URL": "https://3t8csexn70.ucarecd.net/3b9559a4-14f7-4a79-b2b9-c5a7e9aceae7/",
+  "OG Image URL": "",
+  "CTA Heading": "Request Information",
+  "CTA Blurb": "Reach out to Pro Flux Labs LLC to learn how our marketing services can support your home service business. Share your service area and what you offer, and we will respond with guidance on next steps and fit.",
+  "Tagline": "Performance marketing for home service contractors",
+  "Description": "Develop a marketing plan for home service contractors that aligns service offerings, target neighborhoods, and messaging to improve conversion from first visit to inquiry.",
+  "Service Area": "Henderson, Nevada (Clark County)",
+  "Client Name": "Jason White",
+  "Client Email": "jason@landmorecalls.com",
+  "About Story": "Pro Flux Labs LLC was created to help home service contractors market their work more effectively in competitive local markets. We focus on practical, measurable improvements that strengthen how contractors present their services and convert interest into actionable inquiries. Our work is driven by a commitment to clarity, performance, and long-term marketing systems that contractors can rely on.",
+  "Mission Statement": "To help home service businesses build marketing that is clear, measurable, and built for real-world customer demand. We aim to improve how contractors reach homeowners through conversion-focused digital experiences.",
+  "Why Choose Us": "Local-market focus for Henderson and surrounding Clark County service areas | Conversion-first landing page design tailored to residential service offerings | Ongoing campaign optimization using performance data to improve targeting and inquiry conversion",
+  "Marketing Consent": "home service marketing strategy updates, landing page improvement tips, and campaign optimization insights",
+  "Non-Marketing Consent": "inquiry follow-ups, information requests, and service-related clarification messages",
+  "Industry": "digital marketing",
+  "Email_scrubbed": "",
+  "aaaa": "https://3t8csexn70.ucarecd.net/3b9559a4-14f7-4a79-b2b9-c5a7e9aceae7/",
+  "Site Variant": ""
+};
+(function(){
+  var realFetch = window.fetch ? window.fetch.bind(window) : null;
+  window.fetch = function(input, init){
+    var u = String((input && input.url) ? input.url : input || "");
+    if (u.indexOf("script.google.com") !== -1) {
+      return Promise.resolve(new Response(
+        JSON.stringify(window.__A2P_DATA__),
+        {status:200, headers:{"Content-Type":"application/json"}}
+      ));
+    }
+    return realFetch ? realFetch(input, init) : Promise.reject(new Error("offline"));
+  };
+})();
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A2P Compliance Guide</title>
+  <!-- A2P Results v2.6.0 – Path-selector restructure (HighLevel templates + Direct to Carrier), shared copy-paste block, general tips lifted to top -->
+
+  <!-- Perf hints -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://i.ibb.co" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{box-sizing:border-box}
+    :root{
+      --primary:#5c27d4; --primary-2:#6e3de8; --primary-light:#f3efff;
+      --text:#2d3748; --muted:#667085; --border:#e2e8f0;
+      --success:#48bb78; --danger:#e11d48;
+      --shadow-sm:0 2px 6px rgba(0,0,0,.06);
+      --shadow-md:0 10px 30px rgba(0,0,0,.10); --r-md:14px; --r-sm:10px;
+    }
+    body{font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;background:#f7f7fa;color:var(--text);line-height:1.6}
+    .container{max-width:920px;margin:34px auto;background:#fff;border-radius:var(--r-md);box-shadow:var(--shadow-md);overflow:hidden}
+    @media (max-width:980px){.container{margin:18px}}
+
+    .header{
+      background:linear-gradient(135deg,var(--primary),var(--primary-2));
+      color:#fff;text-align:center;padding:38px 22px;position:relative
+    }
+    .header::after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#4c21b0,#6e3de8)}
+    .header h1{margin:0;font-size:28px;font-weight:800;line-height:1.25;letter-spacing:-.2px}
+    .header p{margin:12px 0 0;font-size:15.5px;opacity:.95}
+
+    .disclosure{
+      background:#fff3cd;color:#7a5a00;border:1px solid #ffe08a;
+      border-radius:var(--r-sm);padding:10px 16px;margin:18px 24px 0;text-align:center;font-size:14px
+    }
+
+    .section{padding:28px 28px;border-top:1px solid var(--border)}
+    .section:first-of-type{border-top:0}
+
+    h2{font-size:20px;margin:0 0 14px;color:var(--primary);display:flex;align-items:center;gap:10px}
+    .muted{color:var(--muted)}
+    .soft-card{background:#f9f9ff;border:1px solid #e9e3ff;border-radius:14px;padding:16px}
+
+    .callout{
+      border-radius:14px;padding:16px;border:1px solid var(--border);
+      background:linear-gradient(180deg,#ffffff, #fbfbff);
+      box-shadow:var(--shadow-sm)
+    }
+    .big-note{
+      margin-top:10px;padding:12px;border-radius:12px;
+      background:var(--primary-light);border:1px solid #e5dcff
+    }
+
+    .tip-callout{
+      border-color:#fde68a;
+      background:#fffbeb;
+    }
+
+    /* Website box */
+    .site-box{
+      margin-top:12px;
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:14px;
+      box-shadow:var(--shadow-sm);
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      justify-content:space-between;
+      flex-wrap:wrap;
+    }
+    .site-left{min-width:240px;flex:1}
+    .site-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+    .site-link{
+      display:block;
+      font-weight:800;
+      color:var(--primary);
+      text-decoration:none;
+      word-break:break-word;
+      font-size:15px;
+    }
+    .site-link:hover{text-decoration:underline}
+    .site-actions{display:flex;align-items:center;gap:10px}
+
+    pre{
+      background:#f8fafc;
+      padding:18px 18px;
+      border-radius:14px;
+      white-space:pre-wrap;
+      word-break:break-word;
+
+      font-size:15px;
+      line-height:1.55;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+
+      border:1px solid var(--border);
+      margin:12px 0;
+      color:#1f2937;
+    }
+
+    .copy-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+
+    .copy-btn{
+      background:var(--primary);color:#fff;border:0;
+      padding:10px 16px;
+      font-size:14px;
+      border-radius:12px;
+      cursor:pointer;display:inline-flex;align-items:center;gap:8px;box-shadow:var(--shadow-sm);
+      transition:transform .12s ease, opacity .12s ease
+    }
+    .copy-btn:hover{transform:translateY(-1px);opacity:.95}
+    .copied-msg{display:inline-flex;align-items:center;color:var(--success);font-weight:700;font-size:13.5px}
+
+    /* Upgrade prompt styling */
+    .upgrade-prompt{
+      margin-top:14px;
+      border:2px solid var(--primary);
+      background:linear-gradient(135deg, #f3efff, #ffffff);
+      border-radius:14px;
+      padding:24px;
+      text-align:center;
+      display:none;
+    }
+    .upgrade-prompt h4{
+      margin:0 0 10px;
+      color:var(--primary);
+      font-size:19px;
+      font-weight:700;
+    }
+    .upgrade-prompt p{
+      margin:0 0 18px;
+      color:var(--text);
+      font-size:15px;
+      line-height:1.5;
+    }
+    .upgrade-btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      background:var(--primary);
+      color:#fff;
+      padding:13px 28px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:15px;
+      text-decoration:none;
+      box-shadow:var(--shadow-md);
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .upgrade-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 40px rgba(92,39,212,.25);
+    }
+
+    ul{padding-left:20px;margin:12px 0}
+    li{margin-bottom:10px}
+    li::marker{color:var(--primary)}
+
+    .tips-img{
+      width:100%;height:auto;border-radius:12px;border:1px solid var(--border);
+      box-shadow:var(--shadow-sm);margin-top:12px;background:#f8fafc
+    }
+
+    .pdf-section{background:var(--primary-light);text-align:center;padding:32px}
+    .pdf-section h3{margin:0 0 12px;color:var(--primary)}
+    .pdf-button{
+      display:inline-flex;align-items:center;gap:8px;background:var(--primary);color:#fff;padding:11px 20px;
+      border-radius:12px;font-weight:700;text-decoration:none;box-shadow:var(--shadow-sm)
+    }
+    .pdf-button:hover{opacity:.95}
+
+    /* Feature badge */
+    .feature-badge{
+      margin-top:14px;
+      background:linear-gradient(135deg,#ecfdf5,#f0fdf4);
+      border:1px solid #86efac;
+      border-radius:12px;
+      padding:14px 18px;
+      display:flex;
+      align-items:flex-start;
+      gap:12px;
+    }
+    .feature-badge .badge-icon{
+      font-size:22px;flex-shrink:0;margin-top:1px
+    }
+    .feature-badge .badge-text{font-size:14px;color:#166534;line-height:1.5}
+    .feature-badge .badge-text strong{color:#15803d}
+    .feature-badge .badge-chips{
+      display:flex;flex-wrap:wrap;gap:6px;margin-top:8px
+    }
+    .feature-badge .chip{
+      background:#dcfce7;color:#166534;font-size:12px;font-weight:600;
+      padding:4px 10px;border-radius:20px;border:1px solid #bbf7d0;
+      white-space:nowrap
+    }
+
+    /* Stop warning */
+    .stop-warning{
+      background:#fef2f2;border:2px solid #fca5a5;border-radius:14px;
+      padding:18px;margin-bottom:0
+    }
+    .stop-warning h3{
+      margin:0 0 10px;color:#dc2626;font-size:18px;font-weight:800;
+      display:flex;align-items:center;gap:8px
+    }
+    .stop-warning p{margin:0 0 10px;font-size:14.5px;color:#7f1d1d;line-height:1.55}
+    .stop-warning p:last-child{margin-bottom:0}
+
+    /* Collapsible image preview */
+    .img-preview-wrap{
+      position:relative;
+      max-height:180px;
+      min-height:180px;
+      overflow:hidden;
+      border-radius:12px;
+      transition:max-height .4s ease;
+    }
+    .img-preview-wrap .img-preview-fade{
+      position:absolute;
+      left:0;right:0;bottom:0;
+      height:70px;
+      background:linear-gradient(transparent,rgba(255,244,230,.95));
+      display:flex;align-items:flex-end;justify-content:center;
+      padding-bottom:10px;
+      transition:opacity .3s ease;
+    }
+    .img-preview-wrap .img-preview-fade span{
+      font-size:13px;font-weight:600;color:#b45309;
+      background:rgba(255,255,255,.85);padding:5px 14px;border-radius:20px;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);
+    }
+    .img-preview-wrap.expanded{
+      max-height:2000px;
+    }
+    .img-preview-wrap.expanded .img-preview-fade{
+      opacity:0;pointer-events:none;
+    }
+
+    /* DNS loading animation */
+    .dns-bar-track{
+      height:6px;border-radius:6px;background:#e9e3ff;overflow:hidden;
+    }
+    .dns-bar-fill{
+      height:100%;border-radius:6px;width:0%;
+      background:linear-gradient(90deg,var(--primary),var(--primary-2));
+      transition:width 1s ease;
+    }
+
+    /* Collapsible accordions */
+    .collapsible-toggle{
+      display:flex;align-items:center;justify-content:space-between;
+      cursor:pointer;width:100%;background:none;border:none;
+      padding:0;margin:0;text-align:left;font-family:inherit;
+    }
+    .collapsible-toggle h3{margin:0;flex:1}
+    .collapsible-arrow{
+      font-size:18px;transition:transform .3s ease;flex-shrink:0;margin-left:12px;
+    }
+    .collapsible-body{
+      max-height:0;overflow:hidden;transition:max-height .4s ease;
+    }
+    .collapsible-body.open{
+      max-height:5000px;
+    }
+    .collapsible-arrow.open{
+      transform:rotate(180deg);
+    }
+
+    /* Email right/wrong examples */
+    .email-ex{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+    @media (max-width:560px){.email-ex{grid-template-columns:1fr}}
+    .email-ex .ex{border-radius:12px;padding:12px 14px;border:2px solid}
+    .email-ex .ex.good{background:#f0fdf4;border-color:#86efac}
+    .email-ex .ex.bad{background:#fef2f2;border-color:#fca5a5}
+    .email-ex .ex-label{font-size:12px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;margin:0 0 8px;display:flex;align-items:center;gap:6px}
+    .email-ex .ex.good .ex-label{color:#15803d}
+    .email-ex .ex.bad .ex-label{color:#dc2626}
+    .email-ex .ex-mail{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13.5px;color:#1f2937;background:#fff;border:1px solid var(--border);border-radius:8px;padding:8px 10px;word-break:break-all}
+    .email-ex .ex-mail + .ex-mail{margin-top:6px}
+
+    @media (max-width:620px){
+      .hl-two-screens{grid-template-columns:1fr !important}
+    }
+
+    /* Low Volume Mixed gate - loudest block on the page */
+    .lvm-gate{border:3px solid #dc2626;border-radius:16px;overflow:hidden;margin:18px 0;box-shadow:0 8px 30px rgba(220,38,38,.18)}
+    .lvm-gate .lvm-head{background:#dc2626;color:#fff;padding:16px 18px}
+    .lvm-gate .lvm-kicker{font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.9;margin:0 0 4px}
+    .lvm-gate .lvm-head h3{margin:0;font-size:21px;font-weight:800;line-height:1.25;color:#fff}
+    .lvm-gate .lvm-body{background:#fff;padding:18px}
+    .lvm-gate .lvm-chip-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 14px}
+    .lvm-gate .lvm-chip-label{font-size:13px;font-weight:700;color:#7f1d1d}
+    .lvm-gate .lvm-chip{display:inline-flex;align-items:center;gap:8px;background:#fef2f2;border:2px solid #dc2626;border-radius:10px;padding:10px 16px;font-size:16px;font-weight:800;color:#dc2626;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+    .lvm-gate .lvm-warn{margin:14px 0 0;padding:12px 14px;background:#450a0a;border-radius:10px;font-size:14.5px;font-weight:700;color:#fecaca;line-height:1.5}
+    .lvm-gate .lvm-ok{margin:14px 0 0;padding:12px 14px;background:#f0fdf4;border:1px solid #86efac;border-radius:10px;font-size:14px;color:#166534;line-height:1.5}
+
+    .selector-group:last-child{margin-bottom:0}
+    .selector-heading{
+      text-align:center;font-size:13px;font-weight:700;letter-spacing:.06em;
+      text-transform:uppercase;color:var(--muted);margin:0 0 14px;
+    }
+    .path-grid{
+      display:grid;gap:12px;
+    }
+    .path-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+    .path-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    @media (max-width:620px){
+      .path-grid.cols-3,.path-grid.cols-2{grid-template-columns:1fr}
+    }
+    .path-btn{
+      background:#fff;border:1.5px solid #d9ccf5;border-radius:14px;
+      padding:18px 12px 14px;cursor:pointer;text-align:center;
+      font-family:inherit;transition:transform .12s ease, border-color .12s ease, box-shadow .12s ease;
+      display:flex;flex-direction:column;align-items:center;gap:8px;
+      box-shadow:var(--shadow-sm);
+    }
+    .path-btn:hover{transform:translateY(-2px);border-color:var(--primary);box-shadow:var(--shadow-md)}
+    .path-cta{
+      font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;
+      color:var(--primary);background:var(--primary-light);
+      padding:3px 10px;border-radius:20px;margin-top:2px;
+    }
+    .path-btn.active .path-cta{background:var(--primary);color:#fff}
+    .path-btn .path-icon{font-size:26px;line-height:1}
+    .path-btn .path-name{font-size:15px;font-weight:700;color:var(--text)}
+    .path-btn.active{
+      border-color:var(--primary);background:var(--primary-light);
+      box-shadow:0 0 0 3px rgba(92,39,212,.12);
+    }
+    .path-btn.active .path-name{color:var(--primary)}
+    .path-btn.disabled{
+      background:#f7f7fa;border-style:dashed;border-color:#d8d8e0;
+      cursor:not-allowed;opacity:.85;
+    }
+    .path-btn.disabled .path-icon,.path-btn.disabled .path-name{color:var(--muted)}
+    .soon-pill{
+      display:inline-block;margin-top:2px;font-size:11px;font-weight:700;
+      background:#eef0f4;color:#6b7280;padding:3px 10px;border-radius:20px;
+      letter-spacing:.02em;
+    }
+    .path-panel{display:none;margin-top:18px}
+    .path-panel.active{display:block;animation:fadeIn .25s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .panel-head{
+      display:flex;align-items:center;gap:10px;font-size:18px;font-weight:800;
+      color:var(--primary);margin:0 0 6px;
+    }
+    .panel-sub{margin:0 0 16px;font-size:14px;color:var(--muted)}
+
+    /* Print styles */
+    @media print{
+      body{background:#fff}
+      .container{box-shadow:none;margin:0;border-radius:0}
+      .header{background:var(--primary)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      .disclosure,.upgrade-prompt,.pdf-section,.copy-btn,.site-actions{display:none!important}
+      .section{break-inside:avoid}
+      pre{border:1px solid #ccc;font-size:13px}
+      .tips-img{max-height:300px;object-fit:contain}
+      .path-panel{display:block!important}
+      .path-btn{display:none!important}
+      #sharedBlock{display:block!important}
+      #pathEmptyState{display:none!important}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div style="display:inline-block;background:rgba(255,255,255,.2);color:#fff;font-size:13px;font-weight:700;padding:6px 16px;border-radius:20px;margin-bottom:12px;letter-spacing:0.3px">🆕 v2.6 — Pick your path: HighLevel templates &amp; direct-to-carrier wizards</div>
+      <h1>🧙‍♂️ Just like magic!<br>Your A2P Compliance Kit is Ready!</h1>
+      <p>Thanks for using A2P Wizard. Below is everything you need to get your campaign approved.</p>
+    </div>
+
+    <div class="disclosure" style="background:linear-gradient(135deg,#1877f2,#3b82f6);color:#fff;border:none;padding:14px 20px;font-size:14.5px">
+      🎉 <strong>300+ agencies are already inside.</strong> Join the A2P Wizard Facebook Community for SMS marketing tips, approval strategies, rejection troubleshooting, and priority announcements when carriers change the rules.
+      <a href="https://www.facebook.com/groups/a2pwizard" target="_blank" rel="noopener" style="color:#fff;font-weight:700;margin-left:6px;text-decoration:underline">Join the Facebook Group →</a>
+    </div>
+
+    <!-- Start Over CTA (top) -->
+    <div style="text-align:center;padding:18px 28px;border-top:1px solid var(--border)">
+      <p style="margin:0 0 12px;font-size:15px;font-weight:600;color:var(--text)">🔁 Ready to submit another?</p>
+      <a href="https://a2pwizard.com/automated-setup-trial" class="upgrade-btn" target="_blank" rel="noopener" style="display:inline-flex;text-decoration:none">
+        Click Here to Start Over →
+      </a>
+    </div>
+
+    <!-- Start Here: website (universal) -->
+    <div class="section" id="startHere">
+      <h2 style="justify-content:center">🚀 Start Here</h2>
+      <p style="text-align:center;margin:-8px 0 14px;font-size:14.5px;color:var(--muted)">Your compliance website is ready below. Scroll down to pick your registration type and follow the exact steps for it.</p>
+
+      <div class="soft-card">
+        <p style="margin:0 0 10px">
+          <strong>Your custom-built, domain-matched compliance website is ready.</strong>
+          It's designed to match opt-in requirements and help your campaign get approved.
+          Hero images on the website may take up to <strong>60 seconds</strong> to load.
+        </p>
+
+        <p class="muted" style="margin:0">
+          Use the <strong>Copy &amp; Paste</strong> sections further down to fill out your application exactly.
+        </p>
+
+        <div class="site-box" style="margin-top:14px">
+          <div class="site-left">
+            <div class="site-label">Website (Brand must match this)</div>
+            <a id="siteLinkA" class="site-link" href="#" target="_blank" rel="noopener">Loading…</a>
+            <div id="dnsBarTrack" class="dns-bar-track" style="display:none;margin-top:8px">
+              <div id="dnsBar" class="dns-bar-fill"></div>
+            </div>
+          </div>
+          <div class="site-actions">
+            <button class="copy-btn" onclick="copyText('siteLinkA', this)" title="Copy website">
+              Copy Website
+            </button>
+          </div>
+        </div>
+
+        <!-- Upgrade prompt that shows when rate limited -->
+        <div id="upgradePrompt" class="upgrade-prompt">
+          <h4>🚀 Oops! You've Hit Your Rate Limit</h4>
+          <p>You've reached the limit for free website generations. Upgrade now for unlimited submissions and priority support!</p>
+          <a href="https://a2pwizard.com/done-for-you" class="upgrade-btn" target="_blank" rel="noopener">
+            ⚡ Upgrade Now for Unlimited Access
+          </a>
+          <p style="margin:16px 0 0;font-size:13px;color:var(--muted)">
+            Received this message in error? Please contact <a href="mailto:admin@a2pwizard.com" style="color:var(--primary);text-decoration:none">admin@a2pwizard.com</a>
+          </p>
+        </div>
+
+        <!-- Feature badge -->
+        <div class="feature-badge">
+          <span class="badge-icon">✅</span>
+          <div class="badge-text">
+            <strong>This is a fully functioning website</strong>, complete with Terms of Service, Privacy Policy, and 5 content sections, that passes the AI verification system. You're welcome to use it as a live site for your client if you'd like.
+            <div class="badge-chips">
+              <span class="chip">Terms of Service</span>
+              <span class="chip">Privacy Policy</span>
+              <span class="chip">5 Content Sections</span>
+              <span class="chip">AI Verification Ready</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 1: General tips (always visible, applies to everyone) -->
+    <div class="section">
+      <h2>💡 Read This First (applies to everyone)</h2>
+
+      <div class="stop-warning" style="margin-bottom:12px">
+        <button class="collapsible-toggle" onclick="this.querySelector('.collapsible-arrow').classList.toggle('open');this.closest('.stop-warning').querySelector('.collapsible-body').classList.toggle('open')">
+          <h3 style="color:#dc2626;font-size:17px;font-weight:800;display:flex;align-items:center;gap:8px">⚠️ First time using A2P Wizard or already encountered a brand rejection?</h3>
+          <span class="collapsible-arrow">▼</span>
+        </button>
+        <div class="collapsible-body">
+          <div style="padding-top:14px">
+            <div style="padding:12px;background:#fff5f5;border:1px solid #fca5a5;border-radius:10px;margin-bottom:14px">
+              <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+                <strong>Note:</strong> Brand rejections have <strong>nothing</strong> to do with A2P Wizard. If your brand was outright rejected, it typically means there's an address mismatch or the EIN is invalid. Verify against your client's CP575 form and enter that information <strong>exactly</strong> as it appears.
+              </p>
+            </div>
+            <p>
+              However, if you already have a brand approval and <em>then</em> use A2P Wizard, there will be a mismatch.
+              You'll need to open a support ticket with HighLevel (or your CRM's support) and ask them to
+              <strong>wipe the brand registration</strong> and start fresh.
+              It only takes about 5 minutes to wipe the brand and get it re-approved, but skipping this step can cost you <strong>weeks of headaches</strong>.
+            </p>
+            <div style="margin-top:12px;padding:12px;background:#fff5f5;border:1px solid #fca5a5;border-radius:10px">
+              <p style="margin:0 0 8px;font-weight:700;color:#dc2626;font-size:14px">⚠️ Note on Brand Clearing</p>
+              <p style="margin:0;font-size:13.5px;color:#7f1d1d;line-height:1.55">
+                HighLevel is encountering issues with actually clearing the brand. After submission, verify with support that the brand was truly cleared, not just the GUI. Ask them:
+                <strong>"What website do you see on the Twilio brand registration backend?"</strong>
+                If they return a different website than the one generated above, or you get rejected for "unverifiable website," it's because they cleared the brand in HighLevel but <em>not</em> the actual Twilio brand application. <strong>We strongly recommend creating a new sub-account or using A2P Wizard on a fresh sub-account.</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout" style="background:#fff4e6;border-color:#ffd69a;margin-bottom:12px">
+        <button class="collapsible-toggle" onclick="this.querySelector('.collapsible-arrow').classList.toggle('open');this.closest('.callout').querySelector('.collapsible-body').classList.toggle('open')">
+          <h3 style="margin:0;font-weight:700;color:#b45309;font-size:15px">💡 Business Profile Tip</h3>
+          <span class="collapsible-arrow" style="color:#b45309">▼</span>
+        </button>
+        <div class="collapsible-body">
+          <div style="padding-top:12px">
+            <p style="margin:0 0 14px;font-weight:600;color:#b45309">
+              Update your business profile in HighLevel (or your CRM) to match the output from A2P Wizard. You can change it back as soon as you get approved. It also helps to set the business email to the email generated on your A2P site.
+            </p>
+            <p style="margin:0 0 8px;font-size:14px;color:var(--muted);font-weight:600">📸 Example, Business Profile Setup &amp; Details</p>
+            <div class="img-preview-wrap" onclick="event.stopPropagation();this.classList.toggle('expanded')" style="cursor:pointer">
+              <img
+                src="assets/69a874c47bdf38525b402e06.png"
+                class="tips-img"
+                alt="Business profile setup and details example"
+                loading="lazy"
+                decoding="async"
+                style="margin-top:0"
+              >
+              <div class="img-preview-fade">
+                <span>Click to view full example ▼</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout" style="background:#fff4e6;border-color:#ffd69a;margin-bottom:12px">
+        <button class="collapsible-toggle" onclick="this.querySelector('.collapsible-arrow').classList.toggle('open');this.closest('.callout').querySelector('.collapsible-body').classList.toggle('open')">
+          <h3 style="margin:0;font-weight:700;color:#b45309;font-size:15px">💡 DBA Pro Tip</h3>
+          <span class="collapsible-arrow" style="color:#b45309">▼</span>
+        </button>
+        <div class="collapsible-body">
+          <div style="padding-top:12px">
+            <p style="margin:0 0 12px;font-size:14.5px;color:#5c3a0a;line-height:1.55">
+              Registering a client with a DBA? Don't use it. Use <strong>only</strong> what's on their CP575 form. Companies change DBAs all the time, but the legal business name stays the same, use that to register for A2P and you'll see far more approvals.
+            </p>
+            <p style="margin:0;font-size:14.5px;color:#5c3a0a;line-height:1.55">
+              Registering the legal name and then using the DBA in marketing has <strong>zero</strong> impact on deliverability. They're the same company. For proof: Subway is legally named Doctor's Associates. We can assure you they aren't sending you texts as "Doctor's Associates."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout" style="background:#fff4e6;border-color:#ffd69a">
+        <button class="collapsible-toggle" onclick="this.querySelector('.collapsible-arrow').classList.toggle('open');this.closest('.callout').querySelector('.collapsible-body').classList.toggle('open')">
+          <h3 style="margin:0;font-weight:700;color:#b45309;font-size:15px">📸 Authorized Representatives — FAQ</h3>
+          <span class="collapsible-arrow" style="color:#b45309">▼</span>
+        </button>
+        <div class="collapsible-body">
+          <div style="padding-top:12px">
+            <p style="margin:0 0 12px;font-size:14.5px;color:#5c3a0a;line-height:1.55">
+              <strong>NEW!</strong> This is a frequently asked question. The "Authorized Representative" section is just a point of contact for the application, <strong>do not</strong> put the A2P Wizard-generated email here. Use your agency's email or any professional email you have access to for receiving the OTP. The rest of the information can be your client's. Despite what the GUI says, there is no limit of 5, you can reuse your agency's email an unlimited number of times until we say otherwise.
+            </p>
+            <div class="img-preview-wrap" onclick="event.stopPropagation();this.classList.toggle('expanded')" style="cursor:pointer">
+              <img
+                src="assets/69bd806d0e1bdb51d783bc32.png"
+                class="tips-img"
+                alt="Authorized Representatives example"
+                loading="lazy"
+                decoding="async"
+                style="margin-top:0"
+              >
+              <div class="img-preview-fade">
+                <span>Click to view full example ▼</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 2: Path selector -->
+    <div class="section">
+
+      <!-- NEW: HighLevel two-screens / chat widget warning -->
+      <div style="background:#fff4e6;border:2px solid #f59e0b;border-radius:14px;padding:18px;margin-bottom:24px">
+        <p style="margin:0 0 10px;font-size:17px;font-weight:800;color:#b45309;line-height:1.35">
+          <span style="display:inline-block;background:#f59e0b;color:#fff;font-size:11px;font-weight:800;letter-spacing:.06em;padding:3px 10px;border-radius:20px;vertical-align:2px;margin-right:8px">NEW</span>HighLevel users: seeing a "chat widget setup" screen? Read this first
+        </p>
+        <p style="margin:0 0 14px;font-size:14.5px;color:#5c3a0a;line-height:1.55">
+          HighLevel is rolling out a new registration flow, so you'll see <strong>one of two screens</strong> when you start. Either way, the rule is the same: <strong>A2P Wizard uses Manual Setup. You do NOT need the chat widget, don't install it anywhere.</strong>
+        </p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px" class="hl-two-screens">
+          <div>
+            <p style="margin:0 0 6px;font-size:13px;font-weight:800;color:#b45309;text-transform:uppercase;letter-spacing:.04em">If you see this (older screen)</p>
+            <img
+              src="assets/69cbeffe42f8e89549dd0ac9.png"
+              class="tips-img"
+              alt="Older HighLevel screen: Quick Setup vs Manual Setup choice"
+              loading="lazy"
+              decoding="async"
+              style="margin-top:0"
+            >
+            <p style="margin:8px 0 0;font-size:14px;color:#5c3a0a;line-height:1.5">Choose <strong>Manual Setup</strong>.</p>
+          </div>
+          <div>
+            <p style="margin:0 0 6px;font-size:13px;font-weight:800;color:#b45309;text-transform:uppercase;letter-spacing:.04em">If you see this (newer screen)</p>
+            <video
+              class="tips-img"
+              style="margin-top:0"
+              autoplay muted loop playsinline
+              preload="metadata"
+              poster="assets/6a4be83c1209780f80d3a74e.png"
+            >
+              <source src="assets/6a5917871097b8119578e90f.mp4" type="video/mp4">
+            </video>
+            <p style="margin:8px 0 0;font-size:14px;color:#5c3a0a;line-height:1.5">HighLevel pushes the chat widget as "recommended." Ignore it, <strong>scroll to the very bottom of the page</strong> and click the small <strong>"Switch to manual setup"</strong> link (that's what the video shows).</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 style="justify-content:center">🧭 Start Here: Select Your Registration Type</h2>
+      <p style="text-align:center;margin:-8px 0 16px;font-size:14.5px;color:var(--muted)">👇 <strong>Tap one of the options below</strong> and your exact step-by-step instructions will appear. Nothing below applies until you pick your type.</p>
+
+      <div style="max-width:640px;margin:0 auto 22px;padding:12px 18px;background:linear-gradient(135deg,#ecfdf5,#f0fdf4);border:1px solid #86efac;border-radius:12px;text-align:center">
+        <p style="margin:0;font-size:14px;color:#166534;line-height:1.5">
+          ✅ <strong>Good news:</strong> the details you already submitted work for <strong>every</strong> registration type. Just pick how you're registering below and follow those exact steps.
+        </p>
+      </div>
+
+      <div class="selector-group">
+        <p class="selector-heading" style="display:flex;flex-direction:column;align-items:center;gap:8px"><img src="assets/6a22d38de8bb5ac427e62632.png" alt="HighLevel" style="height:48px;width:auto" loading="lazy" decoding="async"><span>Registration Templates</span></p>
+        <div class="path-grid cols-3">
+          <button class="path-btn" data-path="ghl" onclick="selectPath('ghl')">
+            <span class="path-icon">🧭</span>
+            <span class="path-name">GHL Fill-In</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+          <button class="path-btn" data-path="local" onclick="selectPath('local')">
+            <span class="path-icon">📍</span>
+            <span class="path-name">Local</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+          <button class="path-btn" data-path="tollfree" onclick="selectPath('tollfree')">
+            <span class="path-icon">📞</span>
+            <span class="path-name">Toll-Free</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+          <button class="path-btn" data-path="soleprop" onclick="selectPath('soleprop')">
+            <span class="path-icon">👤</span>
+            <span class="path-name">Sole Prop</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="selector-group">
+        <p class="selector-heading">Direct to Carrier</p>
+        <div class="path-grid cols-3">
+          <button class="path-btn" data-path="twilio" onclick="selectPath('twilio')">
+            <img src="assets/6a22e31f3c3faf82cada68f3.svg" alt="" aria-hidden="true" style="height:26px;width:auto" loading="lazy" decoding="async">
+            <span class="path-name">Twilio Direct Registration</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+          <button class="path-btn" data-path="textgrid" onclick="selectPath('textgrid')">
+            <img src="assets/6a3a898c2ed3b9e323a56d1b.png" alt="" aria-hidden="true" style="height:26px;width:auto" loading="lazy" decoding="async">
+            <span class="path-name">TextGrid Registration</span>
+            <span class="path-cta">Tap to select</span>
+          </button>
+          <button class="path-btn disabled" type="button" aria-disabled="true">
+            <span class="path-icon">☁️</span>
+            <span class="path-name">AWS Connect</span>
+            <span class="soon-pill">Coming Soon</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Empty state: visible until a path is chosen -->
+      <div id="pathEmptyState" style="margin-top:18px;padding:28px 20px;border:2px dashed #c7b9f0;border-radius:14px;text-align:center;background:linear-gradient(180deg,#faf8ff,#fff)">
+        <p style="margin:0;font-size:30px;line-height:1">👆</p>
+        <p style="margin:8px 0 0;font-size:16px;font-weight:700;color:var(--primary)">Select your registration type above</p>
+        <p style="margin:6px 0 0;font-size:14px;color:var(--muted)">Your exact, copy-and-paste step-by-step will appear right here.</p>
+      </div>
+
+      <!-- PATH: Local (HighLevel) -->
+
+      
+      <div class="path-panel" id="panel-ghl">
+        <p class="panel-head">🧭 GHL Fill-In — Trust Center, field by field</p>
+        <p class="panel-sub">Every screen in HighLevel's Local/standard brand flow, in order. Copy each value straight into the matching input.</p>
+
+        <div style="padding:12px;background:linear-gradient(135deg,#eff6ff,#f0f9ff);border:1px solid #93c5fd;border-radius:10px;margin-bottom:20px">
+          <p style="margin:0;font-size:14px;color:#1e3a5f;line-height:1.55">
+            📍 Left nav order: <strong>Business details</strong> → Profile needs → Business details → Business address → Contact information, then <strong>Campaign details</strong> → Messaging volume → Messaging use case → User consent.
+          </p>
+        </div>
+
+        <div style="padding:14px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:12px;margin:0 0 20px">
+          <p style="margin:0 0 6px;font-size:16px;color:#dc2626;font-weight:800">🛑 Website URL — use the new domain</p>
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            Any older screenshot or note showing <s>profluxlabsllc.nebulabrandgroup.com</s> is stale. The live, HTTPS-valid site is <strong>https://profluxlabsllcnebulabrandd.group</strong>.
+          </p>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 1 — Business details</h4>
+          
+          <ul style="margin:0 0 4px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+            <li><strong>Upload your CP-575:</strong> Your IRS EIN confirmation letter (PDF, max 5MB) <span style="color:#64748b;font-size:13px">— optional, but it speeds up vetting</span></li>
+            <li><strong>Business type:</strong> Limited Liability Company Or Sole-Proprietorship</li>
+            <li><strong>Business industry:</strong> Consumer</li>
+            <li><strong>Business registration ID type:</strong> USA: Employer Identification Number (EIN)</li>
+            <li><strong>Business region of operations:</strong> ☑ USA &amp; Canada <span style="color:#64748b;font-size:13px">— tick this one only</span></li>
+          </ul>
+          
+        <p style="margin:16px 0 6px"><strong>Legal business name</strong></p>
+        <pre id="ghlLegalName">Pro Flux Labs LLC</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlLegalName', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">Must match the name on the EIN exactly, including &quot;LLC&quot;.</p>
+          
+        <p style="margin:16px 0 6px"><strong>Business registration number (EIN)</strong></p>
+        <pre id="ghlEin">42-•••••••</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlEin', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">9 digits, formatted 12-3456789. EINs issued in the last 15 days may be rejected.</p>
+          
+        <p style="margin:16px 0 6px"><strong>Business email</strong></p>
+        <pre id="ghlBizEmail">jason@landmorecalls.com</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlBizEmail', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">Has an EIN, so a professional email is correct here.</p>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 2 — Business address</h4>
+          
+          <p style="margin:0 0 4px;font-size:14px;color:#64748b">Must match what the IRS has on file. No PO boxes or virtual addresses.</p>
+          <ul style="margin:0 0 4px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+            <li><strong>Country:</strong> United States</li>
+            <li><strong>State/Province/Region:</strong> Nevada</li>
+          </ul>
+          
+        <p style="margin:16px 0 6px"><strong>Street address</strong></p>
+        <pre id="ghlStreet">12 highland cove lane</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlStreet', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>City</strong></p>
+        <pre id="ghlCity">Henderson</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlCity', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Postal/ZIP code</strong></p>
+        <pre id="ghlZip">89011</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlZip', this)">Copy</button></div>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 3 — Contact information</h4>
+          
+          <p style="margin:0 0 4px;font-size:14px;color:#64748b">The authorized representative for the brand.</p>
+          
+        <p style="margin:16px 0 6px"><strong>First name</strong></p>
+        <pre id="ghlFirst">Jason</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlFirst', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Last name</strong></p>
+        <pre id="ghlLast">White</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlLast', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Email</strong></p>
+        <pre id="ghlContactEmail">jason@landmorecalls.com</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlContactEmail', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Phone</strong></p>
+        <pre id="ghlPhone">+19259990285</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlPhone', this)">Copy</button></div>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 4 — Messaging volume</h4>
+          
+          <ul style="margin:0;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+            <li><strong>Select:</strong> <strong>Low volume</strong> — 6,000 segments/day</li>
+            <li style="color:#64748b">$24.50 one-time + $11.03/month. High volume (600,000/day, $72) is overkill here.</li>
+          </ul>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 5 — Campaign details — Messaging use case</h4>
+          
+          <ul style="margin:0 0 4px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+            <li><strong>Campaign Use Case:</strong> Low Volume Mixed (Recommended)</li>
+          </ul>
+          
+        <p style="margin:16px 0 6px"><strong>Website URL</strong></p>
+        <pre id="ghlSite">https://profluxlabsllcnebulabrandd.group</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlSite', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Use Case Description</strong></p>
+        <pre id="ghlUseCase">This campaign, operated by Pro Flux Labs LLC, sends non-promotional SMS messages to customers regarding inquiry follow-ups, information requests, and service-related clarification messages. Customers may also optionally opt in to receive promotional notifications, including home service marketing strategy updates, landing page improvement tips, and campaign optimization insights. Promotional messages are only sent to users who provide separate, explicit consent via an online form. Message frequency varies, up to 4 messages per month. Message &amp; data rates may apply. Recipients can reply STOP to opt out at any time. Users can review our Privacy Policy at https://profluxlabsllcnebulabrandd.group/privacy and Terms of Service at https://profluxlabsllcnebulabrandd.group/terms .</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlUseCase', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">Paste exactly as-is. Do not reword.</p>
+          
+        <p style="margin:16px 0 6px"><strong>Promotional/Marketing Sample Message</strong></p>
+        <pre id="ghlPromo">Hi [first_name], it's Pro Flux Labs LLC! As a valued subscriber, we wanted to let you know about a limited-time offer just for you. Visit [website] to learn more. Reply STOP to opt out or HELP for assistance. Msg &amp; data rates may apply.</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlPromo', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Transactional/Informational Sample Message</strong></p>
+        <pre id="ghlTrans">Hi [first_name], this is [rep_name] from Pro Flux Labs LLC. Thank you for reaching out to us! We received your inquiry and a team member will be in touch within the next 24 hours. Reply STOP to opt out or HELP for assistance. Msg &amp; data rates may apply.</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlTrans', this)">Copy</button></div>
+        </div>
+
+
+        <div style="border:1px solid #e2e8f0;border-radius:14px;padding:18px;margin:0 0 18px;background:#fff">
+          <h4 style="margin:0 0 4px;color:#6d28d9;font-size:17px">Screen 6 — User consent</h4>
+          
+          
+        <p style="margin:16px 0 6px"><strong>How do contacts opt in to messages?</strong></p>
+        <pre id="ghlOptin">Users opt in by submitting their mobile phone number and actively selecting one or both unchecked consent checkboxes on the contact form at https://profluxlabsllcnebulabrandd.group . Each checkbox clearly describes the category of messages the user will receive (non-promotional or promotional), as detailed in the Use Case above.
+
+Consent is optional and not required to use the service. After submitting the form and selecting consent, users receive a confirmation SMS message.
+
+Please refer to https://profluxlabsllcnebulabrandd.group for the most up-to-date version of the business website and opt-in form.</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlOptin', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">Paste exactly as-is.</p>
+          
+        <p style="margin:16px 0 6px"><strong>Opt-in confirmation message</strong></p>
+        <pre id="ghlConfirm">You are now subscribed to receive SMS messages from Pro Flux Labs LLC. Up to 4 msgs/month. Msg &amp; data rates may apply. Reply STOP to unsubscribe, HELP for help. Privacy Policy: [privacy_policy_link] Terms: [terms_link]</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlConfirm', this)">Copy</button></div><p style="margin:4px 0 0;font-size:13px;color:#64748b">Do NOT modify — paste verbatim, placeholders included.</p>
+          
+        <p style="margin:16px 0 6px"><strong>Privacy Policy URL</strong></p>
+        <pre id="ghlPrivacy">https://profluxlabsllcnebulabrandd.group/privacy</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlPrivacy', this)">Copy</button></div>
+          
+        <p style="margin:16px 0 6px"><strong>Terms &amp; Conditions URL</strong></p>
+        <pre id="ghlTerms">https://profluxlabsllcnebulabrandd.group/terms</pre>
+        <div class="copy-row"><button class="copy-btn" onclick="copyText('ghlTerms', this)">Copy</button></div>
+
+          <p style="margin:18px 0 6px"><strong>Business Website Compliance Checklist</strong> — tick all nine:</p>
+          <ul style="margin:0;font-size:14px;color:#1e1e2f;line-height:1.75">
+            <li>☑ My business website is live, publicly accessible, and error-free.</li><li>☑ My website clearly displays my business name and contact details (address, email, phone).</li><li>☑ Any DBA or alternate business names used are clearly disclosed on the site (if applicable).</li><li>☑ I have provided my business website URL and the opt-in form URL.</li><li>☑ My opt-in method is clearly shown (e.g., website form, QR code, paper form).</li><li>☑ My opt-in flow includes all required disclosures (message purpose, frequency, STOP/HELP, consent language).</li><li>☑ My Privacy Policy is published and accessible from the opt-in flow.</li><li>☑ My Terms of Service are published and accessible from the website.</li><li>☑ My website does not reference purchased, rented, or affiliate lead lists.</li>
+          </ul>
+          <p style="margin:10px 0 0;font-size:13.5px;color:#166534;background:#f0fdf4;border:1px solid #86efac;border-radius:8px;padding:10px 12px">
+            ✅ All nine are already true of your live site — verified against https://profluxlabsllcnebulabrandd.group .
+          </p>
+        </div>
+
+        <div style="padding:12px;background:#fffbeb;border:1px solid #fcd34d;border-radius:10px">
+          <p style="margin:0;font-size:14px;color:#78350f;line-height:1.55">
+            💡 Registering a <strong>toll-free</strong> number instead? That's a different 3-step flow — use the <strong>Toll-Free</strong> tab above.
+          </p>
+        </div>
+      </div>
+
+      <div class="path-panel" id="panel-local">
+        <p class="panel-head">📍 Local Registration — HighLevel</p>
+        <p class="panel-sub">Standard 10DLC local number registration inside HighLevel.</p>
+
+        <div style="padding:16px;background:linear-gradient(135deg,#eff6ff,#f0f9ff);border:2px solid #60a5fa;border-radius:14px;margin-bottom:14px">
+          <h3 style="margin:0 0 12px;font-weight:700;color:#1d4ed8;font-size:16px">🆕 Find the "Switch to manual setup" link (do NOT use the chat widget setup)</h3>
+          <p style="margin:0 0 12px;font-size:14.5px;color:#1e3a5f;line-height:1.55">
+            HighLevel now defaults to a "recommended" chat widget setup and has moved manual setup to a <strong>small link at the very bottom of the page</strong> that says <strong>"Switch to manual setup."</strong> Scroll all the way down and click it, that's the flow A2P Wizard is built for.
+          </p>
+          <p style="margin:0 0 12px;font-size:14.5px;color:#1e3a5f;line-height:1.55">
+            <strong>Don't be misled by the warning next to it.</strong> HighLevel says manual setup "requires longer approval times," but that only applies if you're filling it out yourself without guidance. With A2P Wizard, every field is pre-written and optimized for approval, you're just copying and pasting. Manual setup is the most reliable path to A2P compliance without needing access to your client's actual website.
+          </p>
+          <div class="img-preview-wrap" onclick="event.stopPropagation();this.classList.toggle('expanded')" style="cursor:pointer">
+            <img
+              src="assets/6a4be83c1209780f80d3a74e.png"
+              class="tips-img"
+              alt="Switch to manual setup link at the bottom of HighLevel's chat widget setup page"
+              loading="lazy"
+              decoding="async"
+              style="margin-top:0"
+            >
+            <div class="img-preview-fade" style="background:linear-gradient(transparent,rgba(239,246,255,.95))">
+              <span style="color:#1d4ed8">Click to view full example ▼</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lvm-gate">
+          <div class="lvm-head">
+            <p class="lvm-kicker">Do not skip - #1 cause of rejection</p>
+            <h3>⛔ Select "Low Volume Mixed" or your campaign WILL be rejected</h3>
+          </div>
+          <div class="lvm-body">
+            <div class="lvm-chip-row">
+              <span class="lvm-chip-label">Campaign Use Case must be set to:</span>
+              <span class="lvm-chip">Low Volume Mixed (Recommended)</span>
+            </div>
+            <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+              This is the single most common reason campaigns get denied. Picking anything else (Customer Care, Marketing, 2FA, etc.) gets you rejected. It must say <strong>Low Volume Mixed</strong>, exactly as shown above.
+            </p>
+            <img
+              src="assets/69ce9e27bbe1310051f59b91.png"
+              class="tips-img"
+              alt="Campaign Use Case set to Low Volume Mixed (Recommended)"
+              loading="lazy"
+              decoding="async"
+              style="margin-top:0"
+            >
+            <p class="lvm-warn">🛑 If you glaze over this and select anything else, your campaign will fail. No exceptions.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;padding:14px 16px;background:var(--primary-light);border:1px solid #e5dcff;border-radius:12px">
+          <p style="margin:0;font-size:14.5px;color:var(--text);line-height:1.55">
+            ✅ <strong>Next:</strong> scroll down to <strong>"Copy These Exactly Into Your Application"</strong> and paste each field into the matching section of your campaign.
+          </p>
+        </div>
+      </div>
+
+      <!-- PATH: Toll-Free (HighLevel) -->
+      <div class="path-panel" id="panel-tollfree">
+        <p class="panel-head">📞 Toll-Free Wizard — HighLevel</p>
+        <p class="panel-sub">Follow each step below to register your toll-free number.</p>
+
+        <div style="padding:12px;background:linear-gradient(135deg,#eff6ff,#f0f9ff);border:1px solid #93c5fd;border-radius:10px;margin-bottom:20px">
+          <p style="margin:0;font-size:14px;color:#1e3a5f;line-height:1.55">
+            👤 <strong>Registering as a sole proprietor?</strong> Same setup, just skip the EIN field, change the entity type to <strong>Sole Proprietor</strong>, and make sure your site is <strong>profluxlabsllcnebulabrandd.group</strong>
+          </p>
+        </div>
+
+        <h4 style="margin:0 0 10px;color:#6d28d9;font-size:17px">TF Step 1: Business &amp; Contact Information</h4>
+        <ul style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+          <li><strong>Business DBA:</strong> Leave this blank.</li>
+          <li><strong>Legal Entity Type:</strong> Select <strong>Private Profit</strong></li>
+          <li><strong>Email:</strong> If you have an EIN, use the email below or any professional email. <strong>No EIN? See the rule below.</strong></li>
+        </ul>
+
+        <p style="margin:0 0 6px"><strong>Legal Entity Name:</strong></p>
+        <pre id="tfLegalName">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfLegalName', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Website URL:</strong></p>
+        <pre id="tfWebsite">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfWebsite', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Email:</strong></p>
+        <pre id="tfEmail">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfEmail', this)">Copy</button>
+        </div>
+
+        <div style="padding:14px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:12px;margin:14px 0">
+          <p style="margin:0 0 6px;font-size:16px;color:#dc2626;font-weight:800;line-height:1.4">🛑 IMPORTANT: No EIN? The email type decides pass or fail.</p>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            <strong>No EIN (sole proprietor)?</strong> You MUST use a personal Gmail here. A professional or business email <strong>will</strong> cause the registration to fail.
+          </p>
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            <strong>Have an EIN?</strong> Use the A2P Wizard email above (or any professional email you have access to). It works fine for toll-free.
+          </p>
+          <div class="email-ex">
+            <div class="ex good">
+              <p class="ex-label">✅ No EIN, use this</p>
+              <div class="ex-mail">johnsmith@gmail.com</div>
+              <div class="ex-mail">jsmith2024@gmail.com</div>
+            </div>
+            <div class="ex bad">
+              <p class="ex-label">❌ No EIN, not this</p>
+              <div class="ex-mail">john@acmeplumbing.com</div>
+              <div class="ex-mail">info@acmeplumbing.com</div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="assets/6a0ddb9e1e90e4b60687c87f.png"
+          class="tips-img"
+          alt="Toll-Free Step 1 - Business and Contact Info"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:12px"
+        >
+
+        <h4 style="margin:20px 0 10px;color:#6d28d9;font-size:17px">TF Step 2: Business Location</h4>
+        <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          Enter your legal business address <strong>exactly</strong> as it appears on your CP575 form. This must match what the IRS has on file.
+        </p>
+        <img
+          src="assets/6a0ddb9e07a34aa07f7e95bc.png"
+          class="tips-img"
+          alt="Toll-Free Step 2 - Business Location"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:0"
+        >
+
+        <h4 style="margin:20px 0 10px;color:#6d28d9;font-size:17px">TF Step 3: Messaging Use Case</h4>
+        <ul style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+          <li><strong>Estimated Monthly Volume:</strong> Select <strong>1,000</strong></li>
+          <li><strong>Opt-In Type:</strong> Select <strong>Web Form</strong></li>
+          <li><strong>Use Case Categories:</strong> Select <strong>BOTH</strong> Marketing and Account Notifications</li>
+        </ul>
+
+        <div style="padding:12px;background:#fef2f2;border:2px solid #fca5a5;border-radius:10px;margin-bottom:14px">
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;font-weight:700;line-height:1.55">
+            🛑 You MUST select "Web Form" as the Opt-In Type. If this is not selected, your campaign will fail.
+          </p>
+        </div>
+
+        <p style="margin:0 0 6px"><strong>Opt-In Workflow Image URL:</strong></p>
+        <pre id="tfOptInUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfOptInUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Use Case Description:</strong></p>
+        <pre id="tfUseCase">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfUseCase', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Message Content:</strong></p>
+        <div style="padding:10px 14px;background:#f0fdf4;border:1px solid #86efac;border-radius:10px;margin-bottom:8px">
+          <p style="margin:0;font-size:13.5px;color:#166534;font-weight:600">
+            ✅ Copy the entire message content below in one shot. Do not edit or insert values.
+          </p>
+        </div>
+        <pre id="tfMessages">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tfMessages', this)">Copy All Messages</button>
+        </div>
+
+        <img
+          src="assets/6a0ddb9ee05851175c187c59.png"
+          class="tips-img"
+          alt="Toll-Free Step 3 - Messaging Use Case"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:14px"
+        >
+
+        <div style="margin-top:16px;padding:14px 16px;background:var(--primary-light);border:1px solid #e5dcff;border-radius:12px">
+          <p style="margin:0;font-size:14.5px;color:var(--text);line-height:1.55">
+            ✅ The use case, sample messages, and opt-in copy for toll-free are all included in this section above. Toll-free is self-contained, you do not need the shared copy-paste block below.
+          </p>
+        </div>
+      </div>
+
+      <!-- PATH: Sole Prop (HighLevel) -->
+      <div class="path-panel" id="panel-soleprop">
+        <p class="panel-head">👤 Sole Proprietor — HighLevel</p>
+        <p class="panel-sub">Same as a local registration, with a few entity-specific differences.</p>
+
+        <div style="padding:12px;background:#fef2f2;border:2px solid #fca5a5;border-radius:10px;margin-bottom:14px">
+          <p style="margin:0 0 10px;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            🛑 <strong>Sole prop with no EIN will ONLY work if the individual has no active EIN.</strong> If you're getting a brand rejection, they likely have an EIN associated with them somewhere. In that case, follow the same steps below but select that the business HAS a tax ID and enter it in the appropriate fields.
+          </p>
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            If the EIN is associated with a business name and not just their personal name, you'll need to register the business, not their name. A sole prop EIN registration will only work if they applied for the EIN using their full name.
+          </p>
+        </div>
+
+        <h4 style="margin:0 0 10px;color:#854d0e;font-size:17px">Getting Started</h4>
+        <ul style="margin:0 0 16px;font-size:14.5px;color:#1e1e2f;line-height:1.7">
+          <li>Use the client's <strong>FULL NAME</strong> (no middle initial) as the "Legal Business Name"</li>
+          <li>First step is to purchase a phone number and complete verification</li>
+        </ul>
+
+        <h4 style="margin:0 0 10px;color:#854d0e;font-size:17px">Business Profile Setup</h4>
+        <p style="margin:0 0 10px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          Go to Settings &gt; Business Profile &gt; Business Information. You <strong>must</strong> check "My business is Not registered."
+        </p>
+        <div style="padding:12px;background:#fef2f2;border:2px solid #fca5a5;border-radius:10px;margin-bottom:12px">
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;font-weight:700;line-height:1.55">
+            🛑 If you do not check "My business is Not registered," the application will fail.
+          </p>
+        </div>
+        <img
+          src="assets/6a0e166dd3dfb498edc2e120.png"
+          class="tips-img"
+          alt="Business Information - My business is Not registered checkbox"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:0"
+        >
+
+        <h4 style="margin:20px 0 10px;color:#854d0e;font-size:17px">Business Brand Details</h4>
+        <p style="margin:0 0 10px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          The Brand Name should be the client's <strong>full name</strong>.
+        </p>
+        <img
+          src="assets/6a0e166de304c4490f495f2a.png"
+          class="tips-img"
+          alt="Business Brand Details - Full name as brand name"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:0"
+        >
+
+        <h4 style="margin:20px 0 10px;color:#854d0e;font-size:17px">Authorized Representative</h4>
+        <p style="margin:0 0 10px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          Use the name of the individual being registered. For Job Position and Business Title, always select <strong>"Other"</strong> for both.
+        </p>
+        <p style="margin:0 0 10px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          For phone verification, The Campaign Registry needs to text a number for OTP. It says there's a limit of 3, but we've seen the same number used 20+ times without issue.
+        </p>
+        <div style="padding:14px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:12px;margin:12px 0">
+          <p style="margin:0 0 6px;font-size:16px;color:#dc2626;font-weight:800;line-height:1.4">🛑 IMPORTANT: The email type decides whether you pass or fail.</p>
+          <p style="margin:0 0 4px;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            <strong>No EIN?</strong> You MUST use a personal Gmail in the Authorized Representative email field. A professional or business email <strong>will</strong> cause the application to fail.
+          </p>
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            <strong>Have an EIN?</strong> A professional email can work, but we recommend trying a personal Gmail first. If you get a brand rejection, switch to the other.
+          </p>
+          <div class="email-ex">
+            <div class="ex good">
+              <p class="ex-label">✅ Use this</p>
+              <div class="ex-mail">johnsmith@gmail.com</div>
+              <div class="ex-mail">jsmith2024@gmail.com</div>
+            </div>
+            <div class="ex bad">
+              <p class="ex-label">❌ Not this (no EIN)</p>
+              <div class="ex-mail">john@acmeplumbing.com</div>
+              <div class="ex-mail">info@acmeplumbing.com</div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="assets/6a0e166d64c77d1843465af7.png"
+          class="tips-img"
+          alt="Authorized Representative - Job Position and Business Title set to Other"
+          loading="lazy"
+          decoding="async"
+          style="margin-top:0"
+        >
+
+        <h4 style="margin:20px 0 10px;color:#854d0e;font-size:17px">Then: Manual Setup &amp; Campaign Use Case</h4>
+        <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          Use manual setup for the campaign, scroll to the bottom of HighLevel's chat widget setup page and click the small <strong>"Switch to manual setup"</strong> link (see the note in the Local path above for a screenshot).
+        </p>
+        <div class="lvm-gate">
+          <div class="lvm-head">
+            <p class="lvm-kicker">Read carefully - depends on EIN</p>
+            <h3>⛔ Campaign Use Case: get this right or you'll be rejected</h3>
+          </div>
+          <div class="lvm-body">
+            <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+              What you do here depends on whether the Use Case field is <strong>locked</strong> or <strong>selectable</strong>:
+            </p>
+
+            <div style="padding:12px 14px;background:#f0fdf4;border:2px solid #86efac;border-radius:10px;margin-bottom:10px">
+              <p style="margin:0 0 4px;font-size:14.5px;font-weight:800;color:#15803d">✅ If it shows "Sole Proprietor" and is locked</p>
+              <p style="margin:0;font-size:14px;color:#166534;line-height:1.55">
+                That's a true sole prop (no EIN). <strong>Leave it as "Sole Proprietor."</strong> You can't change it and you don't need to. This is correct, don't panic.
+              </p>
+            </div>
+
+            <div style="padding:12px 14px;background:#fef2f2;border:2px solid #dc2626;border-radius:10px">
+              <p style="margin:0 0 8px;font-size:14.5px;font-weight:800;color:#dc2626">🛑 If you CAN select a Use Case (has EIN)</p>
+              <div class="lvm-chip-row" style="margin:0 0 8px">
+                <span class="lvm-chip-label">It must be set to:</span>
+                <span class="lvm-chip">Low Volume Mixed (Recommended)</span>
+              </div>
+              <p style="margin:0;font-size:14px;color:#7f1d1d;line-height:1.55">
+                If the field lets you pick, selecting anything else (Customer Care, Marketing, 2FA, etc.) gets you rejected. It must say <strong>Low Volume Mixed</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;padding:14px 16px;background:var(--primary-light);border:1px solid #e5dcff;border-radius:12px">
+          <p style="margin:0;font-size:14.5px;color:var(--text);line-height:1.55">
+            ✅ <strong>Next:</strong> scroll down to <strong>"Copy These Exactly Into Your Application"</strong> for the use case, sample messages, and opt-in copy.
+          </p>
+        </div>
+      </div>
+
+      <!-- PATH: Twilio Direct -->
+      <div class="path-panel" id="panel-twilio">
+        <p class="panel-head">🔧 Twilio Direct</p>
+        <p class="panel-sub">Registering A2P/10DLC directly in the Twilio console instead of through a CRM.</p>
+
+        <p style="margin:0 0 16px;font-size:14.5px;color:var(--text);line-height:1.55">
+          Everything you need is in this section, in the order Twilio's console asks for it. Complete the steps top to bottom.
+        </p>
+
+        <div class="callout" style="background:#fff4e6;border-color:#ffd69a;margin-bottom:16px">
+          <button class="collapsible-toggle" onclick="this.querySelector('.collapsible-arrow').classList.toggle('open');this.closest('.callout').querySelector('.collapsible-body').classList.toggle('open');if(typeof postHeight==='function')setTimeout(postHeight,450)">
+            <h3 style="margin:0;font-weight:700;color:#b45309;font-size:15px">⭐ First time registering on Twilio? Read the Golden Rule</h3>
+            <span class="collapsible-arrow" style="color:#b45309">▼</span>
+          </button>
+          <div class="collapsible-body">
+            <div style="padding-top:12px">
+              <p style="margin:0 0 12px;font-size:14.5px;color:#5c3a0a;line-height:1.55">
+                Follow the <strong>GOLDEN RULE</strong> when registering the brand: the A2P Wizard-generated website <strong>MUST</strong> be listed on both the compliance profile and the brand, or your campaign will fail.
+              </p>
+              <div class="img-preview-wrap" onclick="event.stopPropagation();this.classList.toggle('expanded');if(typeof postHeight==='function')setTimeout(postHeight,450)" style="cursor:pointer">
+                <img
+                  src="assets/6a22e292fc95b245498815c0.png"
+                  class="tips-img"
+                  alt="A2P Wizard website listed on the compliance profile and brand"
+                  loading="lazy"
+                  decoding="async"
+                  style="margin-top:0"
+                >
+                <div class="img-preview-fade">
+                  <span>Click to view full example ▼</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="padding:12px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;margin-bottom:16px">
+          <p style="margin:0;font-size:14px;color:#854d0e;line-height:1.55">
+            👤 <strong>Registering as a sole proprietor / individual?</strong> Same flow, with these differences: set the entity type to <strong>Sole Proprietor</strong>, skip the EIN, use the individual's <strong>full name</strong> as the business name, and use a <strong>personal email</strong> for the contact. (Twilio's exact field names may differ slightly; the full step-by-step is coming here soon.)
+          </p>
+        </div>
+
+        <div style="padding:16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:14px;margin-bottom:14px">
+          <p style="margin:0 0 10px;font-size:15px;color:#7f1d1d;font-weight:700;line-height:1.55">
+            🛑 IMPORTANT: When registering the campaign, select the <strong>approved brand</strong>.
+          </p>
+          <p style="margin:0 0 10px;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            <strong>Make sure your brand has the A2P Wizard website</strong> on it before continuing. Then hit <strong>"Create new Messaging Service."</strong>
+          </p>
+          <img
+            src="assets/6a22df723c3faf82cada22ad.png"
+            class="tips-img"
+            alt="Select approved brand and create new messaging service"
+            loading="lazy"
+            decoding="async"
+            style="margin-top:6px"
+          >
+        </div>
+
+        <div class="lvm-gate">
+          <div class="lvm-head">
+            <p class="lvm-kicker">Do not skip - #1 cause of rejection</p>
+            <h3>⛔ Select "Low Volume Mixed" or your campaign WILL be rejected</h3>
+          </div>
+          <div class="lvm-body">
+            <div class="lvm-chip-row">
+              <span class="lvm-chip-label">Campaign type must be set to:</span>
+              <span class="lvm-chip">Low Volume Mixed</span>
+            </div>
+            <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+              This is the single most common reason campaigns get denied. Picking anything else gets you rejected. It must say <strong>Low Volume Mixed</strong>, exactly as shown above.
+            </p>
+            <img
+              src="assets/6a22e02a5f72b50cf847b0ea.png"
+              class="tips-img"
+              alt="Low Volume Mixed campaign type selection"
+              loading="lazy"
+              decoding="async"
+              style="margin-top:0"
+            >
+            <p class="lvm-warn">🛑 If you glaze over this and select anything else, your campaign will fail. No exceptions.</p>
+          </div>
+        </div>
+
+        <p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 1: Campaign Description</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:var(--muted)">Paste exactly as-is, do not edit or insert values.</p>
+        <pre id="twUseCase">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twUseCase', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 2: Sample Messages</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:var(--muted)">Twilio requires all 5. Paste exactly as-is, do not edit or insert values.</p>
+
+        <p style="margin:14px 0 6px"><strong>Sample Message #1:</strong></p>
+        <pre id="twMsg1">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twMsg1', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #2:</strong></p>
+        <pre id="twMsg2">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twMsg2', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #3:</strong></p>
+        <pre id="msg3">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('msg3', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #4:</strong></p>
+        <pre id="msg4">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('msg4', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #5:</strong></p>
+        <pre id="msg5">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('msg5', this)">Copy</button>
+        </div>
+
+        <div style="margin-top:18px;padding:14px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:12px">
+          <p style="margin:0 0 10px;font-size:14.5px;color:#7f1d1d;font-weight:700;line-height:1.55">
+            🛑 For the opt-in question, select <strong>"Web Form."</strong> If this is not selected, your campaign will fail.
+          </p>
+          <img
+            src="assets/6a22dde6f607d4002b91f940.png"
+            class="tips-img"
+            alt="Select Web Form as the opt-in type"
+            loading="lazy"
+            decoding="async"
+            style="margin-top:6px"
+          >
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 3: How do users consent to receive messages?</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:var(--muted)">Paste exactly as-is, do not edit or insert values.</p>
+        <pre id="twConsentCopy">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twConsentCopy', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 4: Message Contents</p>
+        <div style="padding:14px 16px;background:#fffbeb;border:1px solid #fde68a;border-radius:12px">
+          <p style="margin:0 0 10px;font-size:14.5px;color:#854d0e;line-height:1.55">
+            💡 In the message contents selector, check <strong>only</strong> these two boxes: <strong>"Messages will include embedded links"</strong> and <strong>"Messages will include phone numbers."</strong> Leave the others unchecked.
+          </p>
+          <img
+            src="assets/6a22de89e8bb5ac427e7022b.png"
+            class="tips-img"
+            alt="Message contents - select embedded links and phone numbers only"
+            loading="lazy"
+            decoding="async"
+            style="margin-top:6px"
+          >
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 5: Sample of Embedded Links</p>
+        <p style="margin:0 0 10px;font-size:13.5px;color:var(--muted)">Paste these as the sample links Twilio asks for.</p>
+
+        <p style="margin:0 0 6px"><strong>Website Link:</strong></p>
+        <pre id="twOptInFormUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twOptInFormUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Privacy Policy Link:</strong></p>
+        <pre id="privacyUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('privacyUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Terms Link:</strong></p>
+        <pre id="termsUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('termsUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 6: Opt-in Keywords</p>
+        <p style="margin:0;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+          When asked for opt-in keywords, enter: <strong>START</strong> and <strong>SUBSCRIBE</strong>
+        </p>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 7: Opt-In Message</p>
+        <div style="padding:12px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:10px;margin-bottom:12px">
+          <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+            ⚠️ <strong>Do NOT modify this message.</strong> Paste it exactly as shown, including the brackets. <code style="background:#fee2e2;padding:2px 6px;border-radius:4px;font-size:13px">[privacy_policy_link]</code> and <code style="background:#fee2e2;padding:2px 6px;border-radius:4px;font-size:13px">[terms_link]</code> are intentional template placeholders. Do not replace them with actual URLs.
+          </p>
+        </div>
+        <pre id="twOptInMessage">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('twOptInMessage', this)">Copy</button>
+        </div>
+      </div>
+
+      <!-- PATH: TextGrid -->
+      <div class="path-panel" id="panel-textgrid">
+        <p class="panel-head">
+          <img src="assets/6a3a898c2ed3b9e323a56d1b.png" alt="TextGrid" style="height:24px;width:auto;vertical-align:middle;margin-right:6px" loading="lazy" decoding="async">TextGrid Registration
+        </p>
+        <p class="panel-sub">Registering A2P/10DLC directly through TextGrid. Complete the steps top to bottom.</p>
+
+        <div style="padding:12px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;margin-bottom:16px">
+          <p style="margin:0;font-size:14px;color:#854d0e;line-height:1.55">
+            👤 <strong>Registering as a sole proprietor / individual?</strong> Same flow, with these differences: set the entity type to <strong>Sole Proprietor</strong>, skip the EIN, use the individual's <strong>full name</strong> as the business name, and use a <strong>personal email</strong> for the contact. (TextGrid's exact field names may differ slightly; the full step-by-step is coming here soon.)
+          </p>
+        </div>
+
+        <!-- Use Case gate -->
+        <div class="lvm-gate">
+          <div class="lvm-head">
+            <p class="lvm-kicker">Do not skip - #1 cause of rejection</p>
+            <h3>⛔ Use Case: pick Low Volume Mixed, then both sub-use cases</h3>
+          </div>
+          <div class="lvm-body">
+            <div class="lvm-chip-row">
+              <span class="lvm-chip-label">Primary use case must be:</span>
+              <span class="lvm-chip">Low Volume Mixed</span>
+            </div>
+            <p style="margin:0 0 12px;font-size:14.5px;color:#1e1e2f;line-height:1.55">
+              Select <strong>Low Volume Mixed</strong> as the main use case first. Then, underneath it, pick <strong>both</strong> sub-use cases:
+            </p>
+            <div class="lvm-chip-row" style="margin:0 0 12px">
+              <span class="lvm-chip" style="font-size:14px">Customer Care</span>
+              <span class="lvm-chip" style="font-size:14px">Marketing</span>
+            </div>
+            <p class="lvm-warn">🛑 Both sub-use cases (Customer Care AND Marketing) must be selected under Low Volume Mixed. Picking the wrong use case is the #1 reason campaigns get rejected.</p>
+          </div>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 1: Campaign Description</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:var(--muted)">Paste exactly as-is, do not edit or insert values.</p>
+        <pre id="tgUseCase">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgUseCase', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 2: Call to Action / Message Flow</p>
+        <div style="padding:10px 14px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;margin-bottom:8px">
+          <p style="margin:0;font-size:13.5px;color:#854d0e;line-height:1.55">
+            ⚠️ This is the field TCR vetting partners enforce most heavily. Paste the copy below exactly, it describes how users give explicit consent.
+          </p>
+        </div>
+        <pre id="tgConsentCopy">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgConsentCopy', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 3: Privacy Policy Link</p>
+        <pre id="tgPrivacyUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgPrivacyUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 4: Terms &amp; Conditions Link</p>
+        <pre id="tgTermsUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgTermsUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 5: Sample Messages</p>
+        <p style="margin:0 0 4px;font-size:13.5px;color:var(--muted)">TextGrid requires all 5. Paste exactly as-is, do not edit or insert values.</p>
+
+        <p style="margin:14px 0 6px"><strong>Sample Message #1:</strong></p>
+        <pre id="tgMsg1">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgMsg1', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #2:</strong></p>
+        <pre id="tgMsg2">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgMsg2', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #3:</strong></p>
+        <pre id="tgMsg3">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgMsg3', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #4:</strong></p>
+        <pre id="tgMsg4">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgMsg4', this)">Copy</button>
+        </div>
+
+        <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message #5:</strong></p>
+        <pre id="tgMsg5">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('tgMsg5', this)">Copy</button>
+        </div>
+
+        <p style="margin:22px 0 6px;font-size:13px;font-weight:700;color:#1d4ed8;text-transform:uppercase;letter-spacing:.05em">Step 6: Campaign &amp; Content Attributes</p>
+        <div style="padding:14px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:12px">
+          <p style="margin:0 0 10px;font-size:14.5px;color:#7f1d1d;font-weight:700;line-height:1.55">
+            🛑 Select <strong>EXACTLY</strong> these. Getting any of them wrong can cause a rejection.
+          </p>
+          <ul style="margin:0 0 12px;font-size:14px;color:#1e1e2f;line-height:1.7">
+            <li>Subscriber Opt-in: <strong>Yes</strong></li>
+            <li>Subscriber Opt-Out: <strong>Yes</strong></li>
+            <li>Subscriber Help: <strong>Yes</strong></li>
+            <li>Number Pooling: <strong>No</strong></li>
+            <li>Direct Lending or Loan Arrangement: <strong>No</strong></li>
+            <li>Embedded Link: <strong>Yes</strong></li>
+            <li>Embedded Phone Number: <strong>Yes</strong></li>
+            <li>Affiliate Marketing: <strong>No</strong></li>
+            <li>Age Gated Content: <strong>No</strong></li>
+          </ul>
+          <img
+            src="assets/6a3a8894967e20d627a4df5d.png"
+            class="tips-img"
+            alt="TextGrid Campaign and Content Attributes - exact selections"
+            loading="lazy"
+            decoding="async"
+            style="margin-top:0"
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- LAYER 3: Shared copy-paste block (Local + Sole Prop only; shown via selectPath) -->
+    <div id="sharedBlock" style="display:none">
+    <div class="section" style="text-align:center;padding:20px 28px;background:linear-gradient(180deg,#f9f9ff,#fff)">
+      <h2 style="justify-content:center;font-size:22px;margin-bottom:4px">📋 Copy These Exactly Into Your Application</h2>
+      <p class="muted" style="margin:0;font-size:14px">Paste each field into the matching section of your A2P campaign registration.</p>
+    </div>
+
+    <div class="section">
+      <h2>📃 Step 1: Use Case Description <span style="font-size:14px;font-weight:500">(paste exactly as-is, do not edit or insert values)</span></h2>
+      <pre id="useCase">Loading use case description...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('useCase', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>💬 Step 2: Sample Messages <span style="font-size:14px;font-weight:500">(paste exactly as-is, do not edit or insert values)</span></h2>
+
+      <p style="margin:0 0 6px"><strong>Sample Message One (Promotional/Marketing):</strong></p>
+      <pre id="msg1">Loading...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('msg1', this)">Copy</button>
+      </div>
+
+      <p style="margin-top:16px;margin-bottom:6px"><strong>Sample Message Two (Transactional/Informational):</strong></p>
+      <pre id="msg2">Loading...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('msg2', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>✅ Step 3: HighLevel Opt-In Method</h2>
+
+      <p>
+        HighLevel now requires an <strong>Opt-In Method</strong> and a
+        <strong>public Opt-in Form / Image URL</strong>.
+      </p>
+
+      <ul>
+        <li><strong>Opt-In Method:</strong> Website form</li>
+        <li>
+          <strong>Opt-in Form / Image URL:</strong><br>
+          Paste the link below into the HighLevel field exactly as shown.
+        </li>
+      </ul>
+
+      <pre id="optInFormUrl">Loading...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('optInFormUrl', this)">Copy Opt-In URL</button>
+      </div>
+
+      <p style="margin-top:10px;font-size:14px;color:var(--muted)">
+        ✅ This link must be publicly accessible and show clear consent language.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>✅ Step 4: How do Contacts Opt-in to Messages? <span style="font-size:14px;font-weight:500">(paste exactly as-is, do not edit or insert values)</span></h2>
+      <pre id="consentCopy">Loading...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('consentCopy', this)">Copy</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>📜 Step 5: Opt-In Message <span style="font-size:14px;font-weight:500">(paste exactly as-is, do not edit or insert values)</span></h2>
+      <div style="padding:12px 16px;background:#fef2f2;border:2px solid #fca5a5;border-radius:10px;margin-bottom:12px">
+        <p style="margin:0;font-size:14.5px;color:#7f1d1d;line-height:1.55">
+          ⚠️ <strong>Do NOT modify this message.</strong> Paste it exactly as shown, including the brackets. The brackets <code style="background:#fee2e2;padding:2px 6px;border-radius:4px;font-size:13px">[privacy_policy_link]</code> and <code style="background:#fee2e2;padding:2px 6px;border-radius:4px;font-size:13px">[terms_link]</code> are intentional template placeholders. Do not replace them with actual URLs.
+        </p>
+      </div>
+      <pre id="optInMessage">Loading...</pre>
+      <div class="copy-row">
+        <button class="copy-btn" onclick="copyText('optInMessage', this)">Copy</button>
+      </div>
+
+      <div style="margin-top:22px;padding-top:18px;border-top:1px solid var(--border)">
+        <p style="margin:0 0 6px"><strong>Privacy Policy URL:</strong></p>
+        <pre id="shPrivacyUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('shPrivacyUrl', this)">Copy</button>
+        </div>
+
+        <p style="margin:16px 0 6px"><strong>Terms and Conditions URL:</strong></p>
+        <pre id="shTermsUrl">Loading...</pre>
+        <div class="copy-row">
+          <button class="copy-btn" onclick="copyText('shTermsUrl', this)">Copy</button>
+        </div>
+      </div>
+    </div>
+    </div><!-- /#sharedBlock -->
+
+    <div class="section">
+      <h2>💡 Tips for Approval</h2>
+      <ul>
+        <li>Submit between 8am–11am on weekdays</li>
+        <li>Use a fresh number/campaign if resubmitting</li>
+        <li>Brand approval usually takes ~15 minutes</li>
+        <li><strong>Follow all best practices</strong> to avoid delays</li>
+      </ul>
+      <img
+        src="assets/image-4.png"
+        class="tips-img"
+        alt="Tips Screenshot"
+        loading="lazy"
+        decoding="async"
+        width="1200"
+        height="675"
+      >
+      <div class="callout tip-callout" style="margin-top:16px">
+        <p style="margin:0;font-size:14px">
+          ⚠️ <strong>Website not generating?</strong>
+          Make sure you did not use special characters in the company name.
+          Special characters do not work for web addresses. 🙂
+        </p>
+      </div>
+    </div>
+
+    <div style="text-align:center;padding:18px 28px;border-top:1px solid var(--border)">
+      <p style="margin:0;font-size:14px;color:var(--muted)">
+        ⚡ Want unlimited submissions &amp; priority Slack support?
+        <a href="mailto:admin@a2pwizard.com" style="color:var(--primary);font-weight:700;text-decoration:none"> Email admin@a2pwizard.com →</a>
+      </p>
+    </div>
+
+    <!-- Start Over CTA (bottom) -->
+    <div style="text-align:center;padding:18px 28px;border-top:1px solid var(--border)">
+      <p style="margin:0 0 12px;font-size:15px;font-weight:600;color:var(--text)">🔁 Ready to submit another?</p>
+      <a href="https://a2pwizard.com/automated-setup-trial" class="upgrade-btn" target="_blank" rel="noopener" style="display:inline-flex;text-decoration:none">
+        Click Here to Start Over →
+      </a>
+    </div>
+
+    <div class="pdf-section">
+      <h3>Need to send this to a client? Here's a white-labeled guide!</h3>
+      <a href="#" onclick="window.print()" class="pdf-button">Download PDF</a>
+    </div>
+  </div>
+
+  <!-- Selector logic (separate from the data script; calls the global postHeight) -->
+  <script>
+    function selectPath(key){
+      var panels = document.querySelectorAll(".path-panel");
+      for(var i=0;i<panels.length;i++){ panels[i].classList.remove("active"); }
+      var btns = document.querySelectorAll(".path-btn[data-path]");
+      for(var j=0;j<btns.length;j++){ btns[j].classList.remove("active"); }
+
+      var panel = document.getElementById("panel-" + key);
+      if(panel) panel.classList.add("active");
+      var btn = document.querySelector('.path-btn[data-path="' + key + '"]');
+      if(btn) btn.classList.add("active");
+
+      var shared = document.getElementById("sharedBlock");
+      if(shared){
+        shared.style.display = (key === "local" || key === "soleprop") ? "block" : "none";
+      }
+
+      var empty = document.getElementById("pathEmptyState");
+      if(empty) empty.style.display = "none";
+
+      if(panel && panel.scrollIntoView){
+        panel.scrollIntoView({behavior:"smooth", block:"nearest"});
+      }
+      if(typeof postHeight === "function") setTimeout(postHeight, 350);
+    }
+
+    /* Mirror shared hydrated fields into the self-contained Twilio panel.
+       Reads finished text from the data script's fields; never touches that script. */
+    function syncTwilioPanel(){
+      var map = {
+        useCase:["twUseCase","tgUseCase"],
+        msg1:["twMsg1","tgMsg1"],
+        msg2:["twMsg2","tgMsg2"],
+        msg3:["tgMsg3"],
+        msg4:["tgMsg4"],
+        msg5:["tgMsg5"],
+        optInFormUrl:["twOptInFormUrl"],
+        consentCopy:["twConsentCopy","tgConsentCopy"],
+        optInMessage:["twOptInMessage"]
+      };
+      for(var src in map){
+        var s = document.getElementById(src);
+        if(!s) continue;
+        var targets = map[src];
+        for(var i=0;i<targets.length;i++){
+          var d = document.getElementById(targets[i]);
+          if(d) d.textContent = s.textContent;
+        }
+      }
+    }
+    /* Re-sync after load. Keep going until the source fields hold real data
+       (not "Loading..."/"Waiting"), since slow Make/image generation can push
+       hydration well past a short window. Hard cap as a safety stop. */
+    window.addEventListener("load", function(){
+      var ticks = 0;
+      var MAX_TICKS = 90; // ~90s safety cap
+      function looksReal(t){
+        if(!t) return false;
+        t = t.trim();
+        if(!t) return false;
+        if(t.indexOf("Loading") === 0) return false;
+        if(t.indexOf("Waiting") === 0) return false;
+        return true;
+      }
+      var iv = setInterval(function(){
+        syncTwilioPanel();
+        ticks++;
+        var uc = document.getElementById("useCase");
+        var pv = document.getElementById("privacyUrl");
+        // Stop once core fields are populated with real values, or after the cap.
+        if((uc && pv && looksReal(uc.textContent) && looksReal(pv.textContent)) || ticks >= MAX_TICKS){
+          // one final sync to capture the just-landed values, then stop
+          syncTwilioPanel();
+          clearInterval(iv);
+        }
+      }, 1000);
+    });
+  </script>
+
+  <script>
+    const $ = (id)=>document.getElementById(id);
+    function cacheKey(q){ return "a2p_results_" + String(q || "").toLowerCase().trim(); }
+
+    const API_BASE = "https://script.google.com/macros/s/OFFLINE/exec";
+    const SITE_DOMAIN = "profluxlabsllcnebulabrandd.group";
+
+    /* Random name pairs: [customer, rep] */
+    const NAME_PAIRS = [
+      ["Adam","Alex"],["Sarah","Jordan"],["Mike","Taylor"],["Emma","Casey"],
+      ["James","Morgan"],["Lisa","Riley"],["David","Sam"],["Rachel","Jamie"],
+      ["Chris","Drew"],["Nicole","Avery"],["Matt","Quinn"],["Katie","Blake"],
+      ["Ryan","Dana"],["Laura","Reese"],["Josh","Skyler"],["Megan","Pat"],
+      ["Brian","Robin"],["Amy","Cameron"],["Kevin","Jesse"],["Jenna","Bailey"]
+    ];
+    function pickNames(){
+      const a = NAME_PAIRS[Math.floor(Math.random()*NAME_PAIRS.length)];
+      let b = a;
+      while(b===a) b = NAME_PAIRS[Math.floor(Math.random()*NAME_PAIRS.length)];
+      return {c1:a[0], r1:a[1], c2:b[0], r2:b[1]};
+    }
+
+    async function fetchJSON(url, timeoutMs=12000){
+      const ctrl = new AbortController();
+      const t = setTimeout(()=>ctrl.abort(), timeoutMs);
+      try{
+        const r = await fetch(url, {signal: ctrl.signal, cache: "no-store"});
+        if(!r.ok) throw new Error("HTTP "+r.status);
+        return await r.json();
+      } finally { clearTimeout(t); }
+    }
+
+    function updateText(id, text){
+      const el=$(id);
+      if (!el) return;
+      el.textContent = text;
+    }
+
+    function normalizeSlug(slugRaw){
+      return String(slugRaw || "")
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, "")
+        .replace(/[_]/g, "-")
+        .replace(/[^a-z0-9-]/g, "");
+    }
+
+    function buildWebsiteFromSlug(slugRaw){
+      const s = normalizeSlug(slugRaw);
+      if(!s) return { ok:false, website:"" };
+      return { ok:true, website: `https://${SITE_DOMAIN}` };
+    }
+
+    function unwrapRow(resp){
+      if(!resp) return null;
+      if(resp.ok === false) return resp;
+      return resp.data || resp.record || resp.row || resp.result || resp;
+    }
+
+    let _lastApiUrl = "";
+    let _dnsRetryActive = false;
+
+    function setWebsiteUI(website, skipRetry){
+      const siteLinkA = $("siteLinkA");
+      const upgradePrompt = $("upgradePrompt");
+
+      if(siteLinkA){
+        if(website){
+          siteLinkA.textContent = website;
+          siteLinkA.href = website;
+          siteLinkA.style.color = "";
+          if(upgradePrompt) upgradePrompt.style.display = "none";
+          _dnsRetryActive = false;
+        }else if(skipRetry){
+          siteLinkA.textContent = "Website generation unavailable";
+          siteLinkA.href = "#";
+          siteLinkA.style.color = "";
+          if(upgradePrompt) upgradePrompt.style.display = "block";
+        }else if(!_dnsRetryActive){
+          _dnsRetryActive = true;
+          if(upgradePrompt) upgradePrompt.style.display = "none";
+          dnsRetry();
+        }
+      }
+    }
+
+    function dnsRetry(){
+      var linkEl = $("siteLinkA");
+      var barTrack = $("dnsBarTrack");
+      var bar = $("dnsBar");
+      if(linkEl){ linkEl.href = "#"; linkEl.style.color = "var(--muted)"; linkEl.style.fontWeight = "600"; }
+      if(barTrack) barTrack.style.display = "block";
+
+      var steps = [
+        {msg:"🔄 DNS propagating...", pct:"10%", delay:0},
+        {msg:"⚙️ Building your compliance site...", pct:"30%", delay:3000},
+        {msg:"✨ Putting final touches...", pct:"55%", delay:7000},
+        {msg:"🔍 Verifying site is live...", pct:"80%", delay:11000}
+      ];
+      steps.forEach(function(s){
+        setTimeout(function(){
+          if(!_dnsRetryActive) return;
+          if(linkEl) linkEl.textContent = s.msg;
+          if(bar) bar.style.width = s.pct;
+        }, s.delay);
+      });
+      setTimeout(function(){
+        if(!_dnsRetryActive) return;
+        if(bar) bar.style.width = "95%";
+        if(!_lastApiUrl){ _dnsRetryActive = false; dnsDone(false); return; }
+        fetchJSON(_lastApiUrl, 12000).then(function(d){
+          var row = unwrapRow(d);
+          if(row && row.ok !== false){
+            var slug = String((row["Slug"]||row["slug"]||row["SLUG"])||"").trim();
+            var res = buildWebsiteFromSlug(slug);
+            if(res.ok){
+              _dnsRetryActive = false;
+              if(linkEl) linkEl.textContent = "✅ Ready!";
+              if(bar) bar.style.width = "100%";
+              setTimeout(function(){ dnsDone(true); hydrate(row); }, 800);
+              return;
+            }
+          }
+          _dnsRetryActive = false;
+          dnsDone(false);
+        }).catch(function(){ _dnsRetryActive = false; dnsDone(false); });
+      }, 15000);
+    }
+
+    function dnsDone(success){
+      var linkEl = $("siteLinkA");
+      var barTrack = $("dnsBarTrack");
+      if(barTrack) barTrack.style.display = "none";
+      if(linkEl){ linkEl.style.color = ""; linkEl.style.fontWeight = ""; }
+      if(!success) setWebsiteUI("", true);
+    }
+
+    function hydrate(row){
+      if(row && row.ok === false){
+        setWebsiteUI("");
+        updateText("useCase", "Lookup failed. This record could not be found from the endpoint.");
+        updateText("msg1", "—");
+        updateText("msg2", "—");
+        updateText("msg3", "—");
+        updateText("msg4", "—");
+        updateText("msg5", "—");
+        updateText("privacyUrl", "—");
+        updateText("termsUrl", "—");
+        updateText("shPrivacyUrl", "—");
+        updateText("shTermsUrl", "—");
+        updateText("tgPrivacyUrl", "—");
+        updateText("tgTermsUrl", "—");
+        updateText("tfWebsite", "—");
+        updateText("tfLegalName", "—");
+        updateText("tfEmail", "—");
+        updateText("tfOptInUrl", "—");
+        updateText("tfUseCase", "—");
+        updateText("tfMessages", "—");
+        updateText("consentCopy", "—");
+        updateText("optInMessage", "—");
+        updateText("optInFormUrl", "—");
+        return;
+      }
+
+      const businessName =
+        String((row && (row["Legal Business name"] || row["Legal Business Name"] || row["business_name"])) || "").trim();
+
+      const slug =
+        String((row && (row["Slug"] || row["slug"] || row["SLUG"])) || "").trim();
+
+      const bn = businessName || "Client Business";
+
+      const websiteRes = buildWebsiteFromSlug(slug);
+      const website = websiteRes.ok ? websiteRes.website : "";
+      const phone = String((row && (row["Support Phone"] || row["support_phone"])) || "").trim() || "[BUSINESS PHONE]";
+      const stripConsentPrefix = (v) => String(v || "")
+        .replace(/^\s*(?:non[- ]?marketing|promotional|marketing)?\s*(?:messages?|notifications?)\s+(?:about|regarding|including)\s+/i, "")
+        .trim();
+      const marketingConsent = stripConsentPrefix(String((row && (row["Marketing Consent"] || row["marketing_consent"])) || "").trim()) || "promotional offers, discounts, and updates";
+      const nonMarketingConsent = stripConsentPrefix(String((row && (row["Non-Marketing Consent"] || row["non_marketing_consent"])) || "").trim()) || "service updates and inquiries";
+      
+      setWebsiteUI(website);
+
+      updateText("optInFormUrl", (website ? website : "Website link not available yet"));
+
+      const names = pickNames();
+
+      updateText("useCase",
+`This campaign, operated by ${bn}, sends non-promotional SMS messages to customers regarding ${nonMarketingConsent}. Customers may also optionally opt in to receive promotional notifications, including ${marketingConsent}. Promotional messages are only sent to users who provide separate, explicit consent via an online form. Message frequency varies, up to 4 messages per month. Message & data rates may apply. Recipients can reply STOP to opt out at any time. Users can review our Privacy Policy at ${website || "[WEBSITE LINK PENDING]"}/privacy and Terms of Service at ${website || "[WEBSITE LINK PENDING]"}/terms .`
+);
+
+updateText("msg1",
+`Hi [first_name], it's ${bn}! As a valued subscriber, we wanted to let you know about a limited-time offer just for you. Visit [website] to learn more. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("msg2",
+`Hi [first_name], this is [rep_name] from ${bn}. Thank you for reaching out to us! We received your inquiry and a team member will be in touch within the next 24 hours. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("msg3",
+`Hi [first_name], this is [rep_name] from ${bn}. We appreciate your interest and have received your request. Someone from our team will follow up with you within the next 24 hours. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("msg4",
+`Hi [first_name], ${bn} here! For a limited time, we're offering something special just for our subscribers. Visit [website] for more information. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("msg5",
+`Hi [first_name], thanks for reaching out to ${bn}! This is [rep_name], and we wanted to confirm that your inquiry was received. A team member will be in touch shortly. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("privacyUrl", (website ? website + "/privacy" : "[WEBSITE LINK PENDING]/privacy"));
+updateText("termsUrl", (website ? website + "/terms" : "[WEBSITE LINK PENDING]/terms"));
+updateText("shPrivacyUrl", (website ? website + "/privacy" : "[WEBSITE LINK PENDING]/privacy"));
+updateText("shTermsUrl", (website ? website + "/terms" : "[WEBSITE LINK PENDING]/terms"));
+updateText("tgPrivacyUrl", (website ? website + "/privacy" : "[WEBSITE LINK PENDING]/privacy"));
+updateText("tgTermsUrl", (website ? website + "/terms" : "[WEBSITE LINK PENDING]/terms"));
+
+const tfSlug = normalizeSlug(slug);
+const tfEmailAddr = tfSlug ? ("info@" + SITE_DOMAIN) : "[EMAIL PENDING]";
+updateText("tfWebsite", website || "[WEBSITE LINK PENDING]");
+updateText("tfLegalName", bn);
+updateText("tfEmail", tfEmailAddr);
+updateText("tfOptInUrl", website || "[WEBSITE LINK PENDING]");
+
+updateText("tfUseCase",
+`This campaign, operated by ${bn}, sends SMS messages to customers regarding ${nonMarketingConsent}. Customers may also opt in to promotional notifications, including ${marketingConsent}. Messages are only sent to users who provide explicit consent via an online form. Up to 4 msgs/month. Msg & data rates may apply. Reply STOP to opt out.`
+);
+
+updateText("tfMessages",
+`1. Hi [first_name], it's ${bn}! As a valued subscriber, we wanted to let you know about a limited-time offer just for you. Visit [website] to learn more. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.
+
+2. Hi [first_name], this is [rep_name] from ${bn}. Thank you for reaching out to us! We received your inquiry and a team member will be in touch within the next 24 hours. Reply STOP to opt out or HELP for assistance. Msg & data rates may apply.`
+);
+
+updateText("consentCopy",
+`Users opt in by submitting their mobile phone number and actively selecting one or both unchecked consent checkboxes on the contact form at ${website || "[WEBSITE LINK PENDING]"} . Each checkbox clearly describes the category of messages the user will receive (non-promotional or promotional), as detailed in the Use Case above.
+
+Consent is optional and not required to use the service. After submitting the form and selecting consent, users receive a confirmation SMS message.
+
+Please refer to ${website || "[WEBSITE LINK PENDING]"} for the most up-to-date version of the business website and opt-in form.`
+);
+
+updateText("optInMessage",
+`You are now subscribed to receive SMS messages from ${bn}. Up to 4 msgs/month. Msg & data rates may apply. Reply STOP to unsubscribe, HELP for help. Privacy Policy: [privacy_policy_link] Terms: [terms_link]`
+);
+    }
+
+    async function init(){
+      const params = new URLSearchParams(location.search || "?id=uid-1785297021736-935310");
+      const slug = params.get("slug");
+      const id = params.get("id");
+      const queryVal = (slug || id || "").trim();
+
+      if(!queryVal){
+        setWebsiteUI("");
+        updateText("useCase", "Waiting for data…");
+        updateText("msg1", "Waiting for data…");
+        updateText("msg2", "Waiting for data…");
+        updateText("msg3", "Waiting for data…");
+        updateText("msg4", "Waiting for data…");
+        updateText("msg5", "Waiting for data…");
+        updateText("privacyUrl", "Waiting for data…");
+        updateText("termsUrl", "Waiting for data…");
+        updateText("shPrivacyUrl", "Waiting for data…");
+        updateText("shTermsUrl", "Waiting for data…");
+        updateText("tgPrivacyUrl", "Waiting for data…");
+        updateText("tgTermsUrl", "Waiting for data…");
+        updateText("tfWebsite", "Waiting for data…");
+        updateText("tfLegalName", "Waiting for data…");
+        updateText("tfEmail", "Waiting for data…");
+        updateText("tfOptInUrl", "Waiting for data…");
+        updateText("tfUseCase", "Waiting for data…");
+        updateText("tfMessages", "Waiting for data…");
+        updateText("consentCopy", "Waiting for data…");
+        updateText("optInMessage", "Waiting for data…");
+        updateText("optInFormUrl", "Waiting for a link…");
+        return;
+      }
+
+      const key = cacheKey(queryVal);
+      const apiUrl = slug
+        ? (API_BASE + "?slug=" + encodeURIComponent(slug))
+        : (API_BASE + "?id=" + encodeURIComponent(id));
+      _lastApiUrl = apiUrl;
+
+      try{
+        const cached = localStorage.getItem(key);
+        if(cached){
+          const cachedObj = JSON.parse(cached);
+          const cachedRow = unwrapRow(cachedObj);
+          const cachedSlug = String((cachedRow && (cachedRow["Slug"]||cachedRow["slug"]||cachedRow["SLUG"]))||"").trim();
+          if(cachedSlug){
+            hydrate(cachedRow);
+            fetchJSON(apiUrl)
+              .then(d=>{ const r=unwrapRow(d); const s=String((r&&(r["Slug"]||r["slug"]||r["SLUG"]))||"").trim(); if(s){localStorage.setItem(key,JSON.stringify(d));hydrate(r);} })
+              .catch(()=>{});
+            return;
+          }else{
+            localStorage.removeItem(key);
+          }
+        }
+      }catch(e){}
+
+      try{
+        const data = await fetchJSON(apiUrl, 12000);
+        const row = unwrapRow(data);
+        const dataSlug = String((row && (row["Slug"]||row["slug"]||row["SLUG"]))||"").trim();
+        if(dataSlug) localStorage.setItem(key, JSON.stringify(data));
+        hydrate(row);
+      }catch(err){
+        console.error("Error fetching data", err);
+        setWebsiteUI("");
+        updateText("useCase", "We're having trouble loading live data. Try refreshing, or check back in a minute.");
+      }
+    }
+
+    function copyText(elId, btn){
+      const el=$(elId);
+      if(!el) return;
+
+      const txt = (el.tagName === "A")
+        ? (el.href && el.href !== "#" ? el.href : el.textContent.trim())
+        : (el.textContent || "").trim();
+
+      if(!txt || txt === "Loading…") return;
+
+      navigator.clipboard.writeText(txt).then(()=>{
+        const msg=document.createElement("span");
+        msg.className="copied-msg";
+        msg.textContent="✓ Copied!";
+        btn.insertAdjacentElement("afterend", msg);
+        setTimeout(()=>msg.remove(), 1400);
+      });
+    }
+
+    function postHeight(){
+      parent.postMessage({type:"resize",height:document.body.scrollHeight},"*");
+    }
+    window.addEventListener("load",postHeight);
+    new ResizeObserver(postHeight).observe(document.body);
+
+    init();
+  </script>
+</body>
+</html>
